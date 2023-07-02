@@ -1,0 +1,33 @@
+.info{
+    position: relative;
+    font-size: 18px;
+}
+
+
+.info-map,.info-tel{
+    padding-left: 35px;
+}
+
+
+
+.info-map::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background-image: url('./../assets/logo/Group.svg');
+    background-repeat: no-repeat;
+}
+
+.info-tel::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background-image: url('./../assets/logo/phone-call.svg');
+
+}

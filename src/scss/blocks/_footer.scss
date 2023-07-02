@@ -1,0 +1,25 @@
+
+.footer{
+    background: #2D343C;
+    font-size: 14px;
+}
+.footer__row{
+    padding-top: 60px;
+    padding-bottom: 51px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    @include mediaTablet{
+        grid-template-columns: repeat(auto-fit,  minmax(260px, 1fr));
+    }
+}
+
+.footer__nav-list{
+    display: grid;
+    gap: 15px;
+}
+.footer__social{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}

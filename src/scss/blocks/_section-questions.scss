@@ -1,0 +1,35 @@
+.section-questions {
+  padding-bottom: 191px;
+  &__title {
+    margin-bottom: 38px;
+  }
+  &--row {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    @include mediaTablet{
+      flex-direction: column;
+    }
+  }
+  &__form {
+    display: flex;
+    gap: 30px;
+    @include mediaTablet{
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  &__text {
+    font-family:  $font-main;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    @include mediaTablet{
+      order: 4;
+    }
+  }
+  @include mediaTablet{
+    padding-bottom: 90px;
+  }
+}

@@ -1,0 +1,16 @@
+// 
+@mixin numberDecor {
+      top:0;
+      position: absolute;
+      font-family:  $font-accent;
+      font-weight: 700;
+      font-size: 400px;
+      opacity: 002%;    
+}
+
+// width 995px
+@mixin mediaTablet{
+    @media screen and (max-width: $tablet) {
+        @content
+    }
+}

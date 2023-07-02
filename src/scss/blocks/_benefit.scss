@@ -1,0 +1,35 @@
+
+.benefit{
+  overflow: hidden;
+  position: relative;
+    padding: 120px 0 120px 0 ;
+    &::after{
+      content: "II";
+      @include numberDecor;
+      line-height: 1.15;
+      transform: translate(-50%, 0);
+      left: calc(50% + 555px);
+    }
+    
+}
+.benefit__row {
+  display: flex;
+  gap: 70px;
+  @include mediaTablet{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+.benefit__elements {
+  text-align: center;
+}
+.benefit__img {
+  margin-bottom: 53px;
+}
+
+.benefit__text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+}
